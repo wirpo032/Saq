@@ -74,11 +74,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     input.type = 'number';
                     break;
                 case 'array':
-                    // For arrays, we can create a dynamic list of inputs
                     const arrayContainer = document.createElement('div');
                     const addButton = document.createElement('button');
                     addButton.textContent = 'Add';
                     addButton.type = 'button';
+
+                    const initialInput = document.createElement('input');
+                    initialInput.type = 'text';
+                    initialInput.name = `${key}[]`;
+                    arrayContainer.appendChild(initialInput);
                     arrayContainer.appendChild(addButton);
                     container.appendChild(arrayContainer);
 
@@ -88,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         newItem.name = `${key}[]`;
                         arrayContainer.insertBefore(newItem, addButton);
                     });
-                    return; // We don't want to append the container again
+                    break;
                 default:
                     input = document.createElement('input');
                     input.type = 'text';
