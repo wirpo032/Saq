@@ -1,0 +1,17 @@
+{
+  "payload": {
+    "saqGenInfo1": {
+      "saqGenInfoCssfCode": "1234",
+      "saqGenInfoName": "Last Year's Entity",
+      "saqGenInfoAddr": "Last Year's Address",
+      "saqGenInfoPostCode": "L-5432",
+      "saqGenInfoFinYear": "2023-12-31",
+      "saqGenInfoForBr": "N",
+      "sagGenInfoInvServ": "Y",
+      "saqGenInfoDep": "Y",
+      "sagqGenInfoPayServ": "N",
+      "saqGenInfoAccStd": "IFRS",
+      "saqGenInfoOthEnt": "N"
+    }
+  }
+}
